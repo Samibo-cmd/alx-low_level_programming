@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -16,11 +16,11 @@ int main(void)
 
 	/* sizeof evaluates the size of a variables */
 
-printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(charType));
-printf("Size of int: %lu bytes(s)\n", (unsigned long)sizeof(intType));
-printf("Size of long int: %lu bytes(s)\n", (unsigned long)sizeof(longIntType));
-printf("Size of long long int: %lu bytes(s)\n", (unsigned long)sizeof(d));
-printf("Size of float: %lu bytes(s)\n", (unsigned long)sizeof(floatType));
+printf("Size of char: %lu byte\n", (unsigned long)sizeof(charType));
+printf("Size of int: %lu bytes\n", (unsigned long)sizeof(intType));
+printf("Size of long int: %lu bytes\n", (unsigned long)sizeof(longIntType));
+printf("Size of long long int: %lu bytes\n", (unsigned long)sizeof(d));
+printf("Size of float: %lu bytes\n", (unsigned long)sizeof(floatType));
 return (0);
 }
 
