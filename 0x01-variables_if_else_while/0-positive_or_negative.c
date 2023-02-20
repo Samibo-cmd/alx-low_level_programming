@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
-#include <conio.h>
 #include <stdio.h>
 /* more headers goes there */
 
 /**
- * main - Entry point
- * Description: prints if a random number is positive, negative or zero
- * Return: Always 0 (Success)
+ * main - check for positive or negative value
+ *
+ * Return: an integervalue of 0
  */
 
 /* betty style doc for function main goes there */
@@ -22,10 +21,12 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
-	} else if (n < 0)
+	}
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
-	} else
+	}
+	else
 	{
 		printf("%d is zero\n", n);
 	}
