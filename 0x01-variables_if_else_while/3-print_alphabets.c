@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 'a'; i <= 'Z'; i++)
 	{
-	printf("%c \n", i);
+	printf("%c", i);
 	}
 	return (0);
 }
