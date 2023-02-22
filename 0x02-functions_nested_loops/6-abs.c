@@ -8,7 +8,12 @@
 
 int _abs(int n)
 {
-	_putchar(n);
-	_putchar('\n');
-	return (0);
+	if (-n)
+	{
+		return (n);
+	}
+	else
+	{
+		return (n);
+	}
 }
