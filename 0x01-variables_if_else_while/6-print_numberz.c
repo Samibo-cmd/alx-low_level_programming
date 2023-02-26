@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Print single digit numbers of base 10
@@ -8,11 +9,11 @@
 
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 10; num++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(num);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
