@@ -9,10 +9,17 @@
 int main(void)
 {
 	char i;
+	char j;
 
-	for (i = 'a'; i <= 'Z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-	printf("%c", i);
+	putchar(i);
 	}
+
+	for (j = 'A'; j <= 'Z'; j++)
+	{
+		putchar(j);
+	}
+	putchar('\n');
 	return (0);
 }
