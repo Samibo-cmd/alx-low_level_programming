@@ -1,0 +1,8 @@
+#ifndef _MAN_H_
+#define _MAN_H_
+
+void reset_to_98(int *n);
+int _putchar(char c);
+int main(void);
+
+#endif
