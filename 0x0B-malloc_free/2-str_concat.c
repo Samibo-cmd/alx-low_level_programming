@@ -10,7 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *concat;
+	char *conct;
 	int i, j;
 
 	if (s1 == NULL)
@@ -23,22 +23,22 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j] != '\0')
 		j++;
 
-	concat = malloc(sizeof(char) * (i + j + 1));
+	conct = malloc(sizeof(char) * (i + j + 1));
 
-	if (concat == NULL)
+	if (conct == NULL)
 		return (NULL);
 
 	i = j = 0;
 	while (s1[i] != '\0')
 	{
-		concat[i] = s1[i];
+		conct[i] = s1[i];
 		i++;
 	}
 	while (s2[j] != '\0')
 	{
-		concat[i] = s2[j];
+		conct[i] = s2[j];
 		i++, j++;
 	}
-	concat[i] = '\0';
-	return (concat);
+conct[i] = '\0';
+	return (conct);
 }
