@@ -9,19 +9,22 @@
 
 void puts_half(char *str)
 {
-	int a, n, i;
+	int a, n, length;
 
-	i = 0;
+	length = 0;
 
 	for (a = 0; str[a] != '\0'; a++)
-		i++;
+		length++;
 
-	n = (i / 2);
-
-	if ((i % 2) == 1)
-		n = ((n + 1) / 2);
-
-	for (a = n; str[a] != '\0'; a++)
-		_putchar(str[a]);
+	if (length % 2 == 0)
+	{
+		for (n = length / 2; str[n] != '\0'; n++)
+			_putchar (str[n]);
+	}
+	if (length % 2 != 0)
+	{
+		for (n = (length - 1) / 2; str[n] != 0; n++)
+			_putchar (str[n]);
+	}
 	_putchar('\n');
 }
