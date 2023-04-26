@@ -8,24 +8,19 @@
 
 int main(void)
 {
-	int i, j, a, b;
+	int i, j, sum = 0;
 
-	for (i = '0'; i < '9'; i++)
+	i = 0;
+	j = 1;
+
+	for (i = '0'; i <= '8'; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (j = '1'; j <= '9'; j++)
 		{
-			putchar(i);
-			putchar(j);
-
-			a = i + j;
-			b = j + i;
-
-			if (i == j || b == a)
+			if (i != '8' && j != '9')
 			{
-				continue;
-			}
-			if (i < '8' && j < '9')
-			{
+				sum = i + j;
+				putchar(sum);
 				putchar(',');
 				putchar(' ');
 			}
