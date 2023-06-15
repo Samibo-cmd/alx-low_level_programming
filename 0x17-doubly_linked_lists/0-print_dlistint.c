@@ -8,7 +8,8 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t elements = 0;	
+	size_t elements = 0;
+
 	while (h != NULL)
 	{
 		elements += 1;
