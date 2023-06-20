@@ -2,7 +2,6 @@
 #define MAN_H
 
 #include <stdio.h>
-#include <stdlib.h>
 
 int _putchar(char c);
 int _putchar(char c);
@@ -29,7 +28,7 @@ char *_strstr(char *haystack, char *needle);
 int add(int a, int b);
 int sub(int a, int b);
 int mul(int a, int b);
-int divide(int a, int b);
+int div(int a, int b);
 int mod(int a, int b);
 
 #endif
